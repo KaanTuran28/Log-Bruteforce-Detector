@@ -1,0 +1,23 @@
+[project]
+name = "log-bruteforce-detector"
+version = "0.1.0"
+description = "Detect SSH brute-force attacks from auth log files."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "T-X" }]
+dependencies = []
+
+[project.scripts]
+log-bruteforce-detector = "log_bruteforce_detector:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["log_bruteforce_detector"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
